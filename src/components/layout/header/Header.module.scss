@@ -6,6 +6,7 @@
     align-items: center;
     .logo {
       display: flex;
+      align-items: center;
       gap: clamp(0.313rem, 0.208rem + 0.52vw, 0.625rem);
     }
     .logo img {
@@ -70,6 +71,9 @@
       }
       .burger_menu {
         display: block;
+        img {
+          width: 25px;
+        }
       }
     }
   }
