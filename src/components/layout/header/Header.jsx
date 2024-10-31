@@ -6,7 +6,7 @@ import menu from "../../../image/nav-menu.svg";
 const Header = () => {
   return (
     <header className={scss.Header}>
-      <div className="container">
+      <div className="header_container">
         <div className={scss.content}>
           <div className={scss.logo}>
             <img src={logo} alt="logo" />

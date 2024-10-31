@@ -1,0 +1,109 @@
+.main {
+  padding-block: 50px;
+  @media (max-width: 780px) {
+    padding-block: 30px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 805px) {
+      gap: 40px;
+    }
+    @media (max-width: 650px) {
+      flex-direction: column;
+    }
+    .text {
+      max-width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+      @media (max-width: 780px) {
+        gap: 15px;
+      }
+      @media (max-width: 650px) {
+        max-width: 350px;
+      }
+      @media (max-width: 412px) {
+        max-width: 290px;
+      }
+      h1 {
+        font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+        font-weight: 600;
+      }
+      p {
+        font-size: clamp(0.75rem, 0.625rem + 0.63vw, 1.125rem);
+        line-height: 27px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: #a259ff;
+        padding: 12px 35px;
+        border-radius: 16px;
+        @media (max-width: 755px) {
+          padding: 8px 30px;
+        }
+      }
+      .rating {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 755px) {
+          width: 80%;
+        }
+
+        h1 {
+          font-family: Space Mono, sans-serif;
+          font-size: clamp(0.875rem, 0.708rem + 0.83vw, 1.375rem);
+          line-height: 26px;
+        }
+        h1 span {
+          font-size: clamp(0.75rem, 0.646rem + 0.52vw, 1.063rem);
+          font-weight: 500;
+        }
+      }
+    }
+    .image {
+      border-radius: 20px;
+      background: #3b3b3b;
+      max-width: 390px;
+      @media (max-width: 1010px) {
+        max-width: 330px;
+      }
+      @media (max-width: 755px) {
+        max-width: 300px;
+        width: 100%;
+      }
+      @media (max-width: 650px) {
+        max-width: 650px;
+      }
+      img {
+        width: 100%;
+      }
+      .image_content {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        @media (max-width: 1010px) {
+          padding: 10px 15px;
+        }
+        h1 {
+          font-size: clamp(0.75rem, 0.583rem + 0.83vw, 1.25rem);
+        }
+        p {
+          font-size: clamp(0.75rem, 0.667rem + 0.42vw, 1rem);
+          display: flex;
+          align-items: center;
+          gap: 13px;
+        }
+        p::before {
+          content: url("../../../image/image-content.svg");
+        }
+      }
+    }
+  }
+}
