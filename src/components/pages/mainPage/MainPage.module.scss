@@ -29,11 +29,11 @@
         max-width: 290px;
       }
       h1 {
-        font-size: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+        font-size: clamp(1.75rem, 1.333rem + 2.08vw, 3rem);
         font-weight: 600;
       }
       p {
-        font-size: clamp(0.75rem, 0.625rem + 0.63vw, 1.125rem);
+        font-size: clamp(0.813rem, 0.708rem + 0.52vw, 1.125rem);
         line-height: 27px;
       }
       button {
@@ -53,6 +53,9 @@
         justify-content: space-between;
         @media (max-width: 755px) {
           width: 80%;
+        }
+        @media (max-width: 560px) {
+          width: 70%;
         }
 
         h1 {
