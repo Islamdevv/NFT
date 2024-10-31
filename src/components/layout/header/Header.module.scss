@@ -66,6 +66,9 @@
 @media (max-width: 790px) {
   .Header {
     .content {
+      .logo img {
+        width: 80%;
+      }
       .nav {
         display: none;
       }
